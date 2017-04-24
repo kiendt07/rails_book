@@ -18,7 +18,7 @@ group :development, :test do
   gem "byebug", platform: :mri
   gem "rspec-rails"
 end
-gem 'rails-i18n'
+gem "bootstrap-sass", "~> 3.3", ">= 3.3.7"
 
 group :development do
   gem "web-console", ">= 3.3.0"
