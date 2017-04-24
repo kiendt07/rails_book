@@ -21,3 +21,9 @@
 
 en:
   hello: "Hello world"
+  static_pages:
+    default_title: "Ruby on Rails Tutorial Sample App"
+    home: "Home"
+    about: "About"
+    contact: "Contact"
+    help: "Help"
