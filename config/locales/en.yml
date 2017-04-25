@@ -1,36 +1,72 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
-  static_pages:
-    default_title: "Ruby on Rails Tutorial Sample App"
-    home: "Home"
-    about: "About"
-    contact: "Contact"
-    help: "Help"
+  dictionary:
+    home: &home "Home"
+    contact: &contact "Contact"
+    help: &help "Help"
+    about: &about "About"
+    login: &login "Login"
+    site_name: &site_name "Sample App"
+    error:
+      zero: "none"
+      one: "1 error"
+      other: "%{count} errors"
 
-  button:
-    sign-up-now: "Sign Up Now"
-    sign-up: "Sign Up"
-    login: "Log In"
-  link:
-    ruby-on-rails-tutorial: "Ruby on Rails Tutorial"
+  layouts:
+    application:
+      title: "Ruby on Rails Tutorial Sample App"
+    header:
+      site_name: *site_name
+      home: *home
+      help: *help
+      about: *about
+      contact: *contact
+      login: *login
+    footer:
+      about: *about
+      contact: *contact
+      link:
+        tutorial: "Ruby on Rails Tutorial"
+        by: "by"
+  shared:
+    error_messages:
+      contain: "The form contains"
+  static_pages:
+    home:
+      title: *home
+      h:
+        this_is: "This is the home page for the"
+        same_app: "same app"
+    help:
+      title: *help
+    about:
+      title: *about
+    contact:
+      title: *contact
+  users:
+    new:
+      sign_up: &sign_up "Sign Up"
+      title: *sign_up
+    show:
+      error: "This user is not exist!"
+    create:
+      success: "User created successfully!"
+      error: "User created unsuccessfully!"
+  activerecord:
+    models:
+      user:
+        one: "User"
+        other: "Users"
+    attributes:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+    errors:
+      messages:
+        blank: "cannot be blank"
+        invalid: "is invalid"
+      models:
+        user:
+          attributes:
+            name:
+              blank: "cannot be blank"
