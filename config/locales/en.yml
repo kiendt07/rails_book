@@ -27,3 +27,10 @@ en:
     about: "About"
     contact: "Contact"
     help: "Help"
+
+  button:
+    sign-up-now: "Sign Up Now"
+    sign-up: "Sign Up"
+    login: "Log In"
+  link:
+    ruby-on-rails-tutorial: "Ruby on Rails Tutorial"
