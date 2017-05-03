@@ -62,6 +62,7 @@ en:
       title: *login
       login: *login
       sign_up: *sign_up
+      remember_me: "Remember me on this computer"
     create:
       flash:
         create_failed: Invalid email/password combination
