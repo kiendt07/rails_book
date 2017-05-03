@@ -5,6 +5,7 @@ en:
     help: &help "Help"
     about: &about "About"
     login: &login "Login"
+    logout: &logout "Log out"
     site_name: &site_name "Sample App"
     error:
       zero: "none"
@@ -21,6 +22,11 @@ en:
       about: *about
       contact: *contact
       login: *login
+      users: Users
+      account: Account
+      profile: Profile
+      setting: Setting
+      logout: *logout
     footer:
       about: *about
       contact: *contact
@@ -51,6 +57,14 @@ en:
     create:
       success: "User created successfully!"
       error: "User created unsuccessfully!"
+  sessions:
+    new:
+      title: *login
+      login: *login
+      sign_up: *sign_up
+    create:
+      flash:
+        create_failed: Invalid email/password combination
   activerecord:
     models:
       user:
