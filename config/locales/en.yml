@@ -60,6 +60,7 @@ en:
     create:
       success: "User created successfully!"
       error: "User created unsuccessfully!"
+      info: "Check email to active account!"
     edit:
       title: "Edit profile"
       submit: "Update"
@@ -81,6 +82,12 @@ en:
     create:
       flash:
         create_failed: Invalid email/password combination
+        warning: "Account not activated. Check your email for the activation link."
+        danger: "Activation code is wrong!"
+  user_mailer:
+    account_activation:
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account"
+      activate: "Activate!"
   activerecord:
     models:
       user:
