@@ -49,14 +49,29 @@ en:
     contact:
       title: *contact
   users:
+    index:
+      title: "All Users"
     new:
       sign_up: &sign_up "Sign Up"
       title: *sign_up
+      submit: *sign_up
     show:
       error: "This user is not exist!"
     create:
       success: "User created successfully!"
       error: "User created unsuccessfully!"
+    edit:
+      title: "Edit profile"
+      submit: "Update"
+    update:
+      flash:
+        success: "Profile updated"
+    destroy:
+      flash:
+        success: "Deleted user"
+    flash:
+      logged_in_user:
+        danger: "Please log in."
   sessions:
     new:
       title: *login
