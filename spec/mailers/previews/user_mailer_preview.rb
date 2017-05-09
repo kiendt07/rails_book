@@ -7,7 +7,9 @@ class UserMailerPreview < ActionMailer::Preview
   end
 
   def password_reset
-    UserMailerMailer.password_reset
+    user = User.second
+    user.reset_token = User.new_token
+    UserMailer.password_reset user
   end
 
 end
