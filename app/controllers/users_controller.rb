@@ -25,6 +25,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @microposts = @user.microposts.newest_first.paginate page: params[:page]
   end
 
   def edit
@@ -57,14 +58,6 @@ class UsersController < ApplicationController
     unless @user
       flash["danger"] = t ".error"
       redirect_to root_path
-    end
-  end
-
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = t "users.flash.logged_in_user.danger"
-      redirect_to login_url
     end
   end
 

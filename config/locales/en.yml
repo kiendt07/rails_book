@@ -36,12 +36,15 @@ en:
   shared:
     error_messages:
       contain: "The form contains"
+    user_info:
+      profile: "Profile"
   static_pages:
     home:
       title: *home
       h:
         this_is: "This is the home page for the"
         same_app: "same app"
+        micropost_feed: "Micropost Feed"
     help:
       title: *help
     about:
@@ -70,9 +73,28 @@ en:
     destroy:
       flash:
         success: "Deleted user"
+    user:
+      delete: "Delete"
+      confirm: "Are you sure to delete?"
     flash:
       logged_in_user:
         danger: "Please log in."
+  microposts:
+    create:
+      flash:
+        success: "Create successfully."
+        danger: "Create failed"
+    destroy:
+      flash:
+        success: "Deleted successfully."
+    posted: "Posted"
+    delete: "Delete"
+    confirm_delete: "Are you sure?"
+    flash:
+      correct_user:
+        danger: "You cannot do this action!"
+    form:
+      submit: "Post"
   sessions:
     new:
       title: *login
@@ -113,6 +135,9 @@ en:
       user:
         one: "User"
         other: "Users"
+      micropost:
+        one: "micropost"
+        other: "microposts"
     attributes:
       user:
         name: "Name"
@@ -127,3 +152,15 @@ en:
           attributes:
             name:
               blank: "cannot be blank"
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: "an hour ago"
+        other: "%{count} hours ago"
+      x_minutes:
+        one: "an minute ago"
+        other: "%{count} minutes ago"
+      less_than_x_minutes:
+        one: "less than a minute ago"
+        other: "less than %{count} minutes ago"
+      x_days: "%{count} days ago"
