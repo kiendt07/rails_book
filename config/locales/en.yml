@@ -79,11 +79,31 @@ en:
       login: *login
       sign_up: *sign_up
       remember_me: "Remember me on this computer"
+      forgot_password: "Forgot password"
     create:
       flash:
         create_failed: Invalid email/password combination
         warning: "Account not activated. Check your email for the activation link."
         danger: "Activation code is wrong!"
+  password_resets:
+    new:
+      title: "Password Reset"
+      submit: "Submit"
+    update:
+      flash:
+        success: "Reset successfully"
+    create:
+      flash:
+        info: "Check email to see the link"
+        danger: "Email is wrong"
+    edit:
+      confirmation: "Comfirmation"
+      update: "Update"
+    flash:
+      check_expiration:
+        danger: "The link is expired."
+    errors:
+      cant_be_empty: "Cant't be empty"
   user_mailer:
     account_activation:
       welcome: "Welcome to the Sample App! Click on the link below to activate your account"
