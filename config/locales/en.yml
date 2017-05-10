@@ -38,6 +38,9 @@ en:
       contain: "The form contains"
     user_info:
       profile: "Profile"
+    stats:
+      following: "following"
+      followers: "followers"
   static_pages:
     home:
       title: *home
@@ -79,6 +82,16 @@ en:
     flash:
       logged_in_user:
         danger: "Please log in."
+    follow:
+      submit: "Follow"
+    unfollow:
+      submit: "Unfollow"
+    following:
+      title: "Following"
+    followers:
+      title: "Followers"
+    show_follow:
+      view_my_profile: "View My Profile"
   microposts:
     create:
       flash:
