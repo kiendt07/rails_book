@@ -13,12 +13,14 @@ gem "jbuilder", "~> 2.5"
 gem "bootstrap-sass", "~> 3.3", ">= 3.3.7"
 gem "will_paginate", "~> 3.1", ">= 3.1.5"
 gem "bootstrap-will_paginate", "~> 0.0.10"
+gem "carrierwave", "~> 0.11.2"
 
 group :development, :test do
   gem "byebug", platform: :mri
   gem "rspec-rails"
   gem "factory_girl_rails", "~> 4.5.0"
   gem "capybara", "~> 2.7", ">= 2.7.1"
+  gem "faker"
 end
 
 group :development do
@@ -29,7 +31,6 @@ group :development do
 end
 
 group :test do
-  gem "faker"
   gem "shoulda-matchers", "~> 3.1", ">= 3.1.1"
 end
 
